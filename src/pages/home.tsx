@@ -47,7 +47,7 @@ export default function Home() {
           <div className="w-full max-w-3xl mx-auto space-y-6 ">
             <div className="flex items-center justify-between ">
               <h4 className="text-2xl font-bold text-gray-900">Marketplace</h4>
-              <div className="p-4 rounded-full bg-[rgba(255,255,255,0.35)]">
+              <div className="p-4 rounded-full bg-white">
                 <BellIcon />
               </div>
             </div>
