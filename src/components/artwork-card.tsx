@@ -8,7 +8,7 @@ interface Props {
 
 export default function ArtworkCard({ img }: Props) {
   return (
-    <motion.div layout className="relative w-[360px] h-[288px]">
+    <motion.div layout className="relative w-[324px] h-[259.2px]">
       <Image src={img} fill alt="" className="rounded-lg bg-gray-200" />
     </motion.div>
   );

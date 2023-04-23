@@ -150,7 +150,7 @@ const ActivityTab = () => {
 
 const ArtworkTab = () => {
   return (
-    <div className="flex flex-wrap items-center gap-4 bg-white">
+    <div className="flex flex-wrap justify-center w-full gap-4 bg-white p-2">
       {imgs.map((img, n) => {
         return <ArtworkCard key={n} img={img} />;
       })}

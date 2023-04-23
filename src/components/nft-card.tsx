@@ -11,7 +11,7 @@ interface Props {
 
 export default function NFTCard({ creator, img, price, name, time }: Props) {
   return (
-    <div className="min-w-[265px]  bg-white p-5 rounded-3xl space-y-4">
+    <div className="min-w-[337.5px]  bg-white p-5 rounded-3xl space-y-4">
       <div className="flex items-center justify-between">
         <div className="relative h-[244.5px] w-[337.5px]">
           <Image

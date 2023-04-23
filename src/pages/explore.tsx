@@ -46,7 +46,7 @@ export default function Explore() {
             Following
           </button>
         </div>
-        <div className="flex flex-wrap justify-center gap-x-4">
+        <div className="flex flex-wrap justify-center gap-4">
           {imgs.map((img, i) => {
             return (
               <NFTCard
