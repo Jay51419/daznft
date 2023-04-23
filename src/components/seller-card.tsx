@@ -17,7 +17,7 @@ export default function SellerCard({ img, n, name, price }: Props) {
           height={46}
           width={46}
           alt=""
-          className="rounded-full"
+          className="rounded-full bg-gray-200"
         />
         <div className="flex flex-col">
           <span className="font-bold text-lg text-gray-900">{name}</span>

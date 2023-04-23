@@ -18,7 +18,7 @@ export default function NFTCard({ creator, img, price, name, time }: Props) {
           height={163}
           width={225}
           alt=""
-          className="rounded-3xl"
+          className="rounded-3xl bg-gray-200"
         />
       </div>
       <div className="flex items-center justify-between">
