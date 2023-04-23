@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Image from "next/image";
 
 interface Props {
@@ -10,9 +11,14 @@ export default function SearchUserCard({ img, name, followers }: Props) {
   return (
     <div className="w-full p-4 flex items-center justify-between border-b rounded-lg">
       <div className="flex items-center gap-x-2 md:gap-x-4 ">
-        <div className="relative h-12 w-12">
-          <Image src={img} fill alt="" className="rounded-full bg-gray-200 object-cover" />
-        </div>
+        <motion.div layout className="relative h-12 w-12">
+          <Image
+            src={img}
+            fill
+            alt=""
+            className="rounded-full bg-gray-200 object-cover"
+          />
+        </motion.div>
         <div className="flex flex-col">
           <span className="font-bold text-lg text-gray-900">{name}</span>
           <span className="text-xs text-gray-400">{followers} Followers</span>
