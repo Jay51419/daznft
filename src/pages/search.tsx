@@ -1,8 +1,8 @@
 import Page from "@/components/page";
 import SearchUserCard from "@/components/search-user-card";
-import SellerCard from "@/components/seller-card";
 import FilterIcon from "@/icons/filter";
 import SearchIcon from "@/icons/search";
+import Link from "next/link";
 export default function Search() {
   return (
     <Page active="Search">
@@ -26,12 +26,13 @@ export default function Search() {
         <div className="flex flex-col space-y-2 bg-white">
           {new Array(4).fill(0).map((_, n) => {
             return (
-              <SearchUserCard
-                key={n}
-                img="/sellers/1.png"
-                name="Antonio"
-                followers="1.2k"
-              />
+              <Link key={n} href={"/profile/1"}>
+                <SearchUserCard
+                  img="/sellers/2.jpg"
+                  name="Antonio"
+                  followers="1.2k"
+                />
+              </Link>
             );
           })}
         </div>

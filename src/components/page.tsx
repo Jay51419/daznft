@@ -6,7 +6,13 @@ import PersonIcon from "@/icons/person";
 import SearchIcon from "@/icons/search";
 import Link from "next/link";
 
-export type tab = "Home" | "Search" | "Add NFT" | "Explore" | "Profile";
+export type tab =
+  | "Home"
+  | "Search"
+  | "Add NFT"
+  | "Explore"
+  | "Profile"
+  | "None";
 
 interface Props {
   children: JSX.Element;
@@ -67,7 +73,10 @@ export default function Page({ children, active }: Props) {
               />
               <span className="text-xl text-gray-900">Explore</span>
             </Link>
-            <Link href="/profile" className="flex gap-x-4 items-center w-1/2">
+            <Link
+              href="/profile/me"
+              className="flex gap-x-4 items-center w-1/2"
+            >
               <PersonIcon
                 className={`w-8 h-8 ${
                   active == "Profile"
