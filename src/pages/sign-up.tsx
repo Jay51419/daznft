@@ -17,7 +17,7 @@ export default function SignUp() {
           <h5 className="text-lg text-gray-600">Sign In to continue</h5>
           <div className="h-8"></div>
           <div className="border focus-within:border-2 rounded-lg w-full focus-within:border-primary-dark border-primary-light h-12 flex items-center px-4">
-            <PersonIcon />
+            <PersonIcon className="stroke-gray-400" strokeWidth={1} />
             <input
               className="rounded-lg h-full w-full focus:outline-none  px-1 pb-1 placeholder-[#9999A7] placeholder:font-light placeholder:text-sm "
               type="text"
@@ -64,9 +64,12 @@ export default function SignUp() {
               .
             </span>
           </div>
-          <button className="text-lg text-white w-full rounded-lg py-3 bg-gradient-to-r from-primary-light to-primary-dark">
+          <Link
+            href="/home"
+            className="text-lg text-center text-white w-full rounded-lg py-3 bg-gradient-to-r from-primary-light to-primary-dark"
+          >
             Sign Up
-          </button>
+          </Link>
           <div className="text-gray-700 text-sm">
             Already have any account?{" "}
             <Link href="/sign-in" className="text-primary-dark font-medium">

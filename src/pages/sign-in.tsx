@@ -36,9 +36,12 @@ export default function SignIn() {
             <input type="checkbox" className="h-5 w-5  accent-primary-dark" />
             <span className="text-sm  text-gray-400">Remember me</span>
           </div>
-          <button className="text-lg text-white w-full rounded-lg py-3 bg-gradient-to-r from-primary-light to-primary-dark">
+          <Link
+            href="/home"
+            className="text-lg text-center text-white w-full rounded-lg py-3 bg-gradient-to-r from-primary-light to-primary-dark"
+          >
             Sign In
-          </button>
+          </Link>
 
           <div className="text-gray-700 text-sm">
             Don&rsquo;t have any account?{" "}
