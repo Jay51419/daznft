@@ -5,7 +5,7 @@ import Logo from "@/components/logo";
 
 const data = [
   {
-    img: "/onboarding/1.svg",
+    img: "/onboarding/1.png",
     h: "First Open App",
     p:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam duis viverra mattis nullam turpis scelerisque pharetra. Amet, tortor et tortor sed habitant vitae vel.",
@@ -17,7 +17,7 @@ const data = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam duis viverra mattis nullam turpis scelerisque pharetra. Amet, tortor et tortor sed habitant vitae vel.",
   },
   {
-    img: "/onboarding/1.svg",
+    img: "/onboarding/1.png",
     h: "Place a bid",
     p:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla quam duis viverra mattis nullam turpis scelerisque pharetra. Amet, tortor et tortor sed habitant vitae vel.",
