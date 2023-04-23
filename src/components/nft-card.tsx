@@ -13,13 +13,14 @@ export default function NFTCard({ creator, img, price, name, time }: Props) {
   return (
     <div className="min-w-[265px]  bg-white p-5 rounded-3xl space-y-4">
       <div className="flex items-center justify-between">
-        <Image
-          src={img}
-          height={163}
-          width={225}
-          alt=""
-          className="rounded-3xl bg-gray-200"
-        />
+        <div className="relative h-[244.5px] w-[337.5px]">
+          <Image
+            src={img}
+            fill
+            alt=""
+            className="rounded-3xl bg-gray-200 object-cover"
+          />
+        </div>
       </div>
       <div className="flex items-center justify-between">
         <div className="flex flex-col">

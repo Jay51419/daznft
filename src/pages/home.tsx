@@ -1,19 +1,22 @@
-import Logo from "@/components/logo";
 import NFTCard from "@/components/nft-card";
 import SellerCard from "@/components/seller-card";
-import AddIcon from "@/icons/add";
 import BellIcon from "@/icons/bell";
-import ExploreIcon from "@/icons/explore";
-import HomeIcon from "@/icons/home";
-import PersonIcon from "@/icons/person";
-import SearchIcon from "@/icons/search";
 import Link from "next/link";
 import Page from "../components/page";
+
+const imgs = [
+  "/nft-bg/1.png",
+  "/nft-bg/2.jpg",
+  "/nft-bg/3.jpg",
+  "/nft-bg/4.jpg",
+  "/nft-bg/5.jpg",
+  "/nft-bg/6.jpg",
+];
 
 export default function Home() {
   return (
     <Page active="Home">
-      <div className="w-full max-w-3xl mx-auto space-y-6 ">
+      <div className="w-full max-w-4xl mx-auto space-y-6 ">
         <div className="flex items-center justify-between ">
           <h4 className="text-2xl font-bold text-gray-900">Marketplace</h4>
           <div className="p-4 rounded-full bg-white">
@@ -22,17 +25,20 @@ export default function Home() {
         </div>
         <div className="flex items-center justify-between ">
           <h5 className="text-xl font-bold text-gray-600">Featured NFTs</h5>
-          <Link href="#" className="text-xl font-bold text-primary-light">
+          <Link
+            href="/explore"
+            className="text-xl font-bold text-primary-light"
+          >
             See all
           </Link>
         </div>
         <div className="space-y-4">
-          <div className="flex items-center overflow-x-hidden gap-x-2">
-            {new Array(10).fill(0).map((_, i) => {
+          <div className="flex items-center  gap-x-2">
+            {imgs.map((img, i) => {
               return (
                 <NFTCard
                   key={i}
-                  img="/nft-bg/1.png"
+                  img={img}
                   name="Design Mania"
                   creator="Antonio"
                   price="0.09 ETH"
@@ -54,7 +60,7 @@ export default function Home() {
           </Link>
         </div>
         <div className="flex flex-col space-y-2">
-          {new Array(10).fill(0).map((_, n) => {
+          {new Array(4).fill(0).map((_, n) => {
             return (
               <SellerCard
                 key={n}

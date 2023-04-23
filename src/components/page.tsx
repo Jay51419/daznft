@@ -21,7 +21,7 @@ interface Props {
 
 export default function Page({ children, active }: Props) {
   return (
-    <main className="min-h-screen w-full">
+    <main className="min-h-screen w-full overflow-x-hidden">
       <div className="flex w-full">
         <nav className="fixed max-w-xs w-full h-screen bg-white hidden lg:block">
           <div className="flex w-full justify-center py-8">

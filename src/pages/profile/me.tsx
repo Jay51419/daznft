@@ -18,7 +18,7 @@ export default function Profile() {
   const [activeTab, setActiveTab] = useState<tab>("Artworks");
   return (
     <Page active="Profile">
-      <div className="w-full max-w-3xl mx-auto space-y-6 ">
+      <div className="w-full max-w-4xl mx-auto space-y-6 ">
         <div className="flex items-center justify-between ">
           <div className="flex items-center gap-x-6">
             <h4 className="font-semibold text-2xl text-gray-900">Profile</h4>
@@ -120,7 +120,7 @@ const imgs = [
 
 const ArtworkTab = () => {
   return (
-    <div className="flex flex-wrap items-center gap-4 bg-white">
+    <div className="flex flex-wrap justify-center gap-4 bg-white">
       {imgs.map((img, n) => {
         return <ArtworkCard key={n} img={img} />;
       })}
