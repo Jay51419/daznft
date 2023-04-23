@@ -14,6 +14,7 @@ export default function SearchUserCard({ img, name, followers }: Props) {
         <motion.div layout className="relative h-12 w-12">
           <Image
             src={img}
+            loading="lazy"
             fill
             alt=""
             className="rounded-full bg-gray-200 object-cover"
